@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "observe-instrument-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = "MCP server that instruments Python AI agents with the ioa-observe-sdk"
 readme = "README.md"
 license = "Apache-2.0"

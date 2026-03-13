@@ -1,5 +1,7 @@
 # observe-instrument-mcp
 
+<!-- mcp-name: io.github.alanzha2/observe-instrument-mcp -->
+
 An MCP server that automatically instruments Python AI agents with the [ioa-observe-sdk](https://github.com/agntcy/observe) — adding OpenTelemetry-based tracing, metrics, and logs with zero manual effort.
 
 Works with any MCP-compatible AI coding assistant: Claude Desktop, Cursor, Windsurf, and others.
