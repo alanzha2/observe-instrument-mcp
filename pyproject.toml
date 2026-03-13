@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "observe-instrument-mcp"
+version = "0.1.1"
+description = "MCP server that instruments Python AI agents with the ioa-observe-sdk"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+keywords = ["mcp", "observability", "opentelemetry", "agents", "langgraph", "llama-index", "crewai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "litellm>=1.40.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+observe-instrument-mcp = "observe_instrument_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/alanzha2/observe-instrument-mcp"
+Repository = "https://github.com/alanzha2/observe-instrument-mcp"
+
+[tool.setuptools.packages.find]
+include = ["observe_instrument_mcp*"]
+
+[tool.setuptools.package-data]
+observe_instrument_mcp = ["resources/*.md"]
