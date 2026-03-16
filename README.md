@@ -82,6 +82,24 @@ Add to `~/.codeium/windsurf/mcp_config.json`:
 }
 ```
 
+## Examples
+
+Ready-to-use uninstrumented agent files are included in the `examples/` folder:
+
+```
+examples/
+  single-agent/
+    openai-sdk-example.py      # OpenAI SDK customer support agent
+    langgraph-example.py       # LangGraph currency converter
+    llama-index-example.py     # LlamaIndex math agent
+    crewai-example.py          # CrewAI research crew
+  multi-agent/
+    openai-sdk-multi-agent-example.py   # OpenAI SDK orchestrator pipeline
+    langgraph-multi-agent-example.py    # LangGraph supervisor pattern
+    llama-index-multi-agent-example.py  # LlamaIndex research + writing pipeline
+    crewai-multi-agent-example.py       # CrewAI research + publishing crews
+```
+
 ## Usage
 
 Once configured, ask your AI assistant:
